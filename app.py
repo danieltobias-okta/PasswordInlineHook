@@ -7,7 +7,7 @@ app = Flask(__name__)
 def password():
     print(request.json)
     response = request.json
-    
+    #your logic
     return jsonify(commands = [{"type":"com.okta.action.update", "value" : { "credential":"VERIFIED"}}])
 
 if __name__ == "__main__":
